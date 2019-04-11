@@ -56,3 +56,5 @@ Route::get('cart/complete','CartController@complete');
 Route::get('cart/finish','CartController@finish_order');
 
 Route::get('/chart','HomeController@view_chart')->middleware('auth');
+
+Route::get('/logout','Auth\LoginController@logout');
